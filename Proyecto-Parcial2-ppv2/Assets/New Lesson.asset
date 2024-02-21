@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: New Lesson
+  m_EditorClassIdentifier: Assembly-CSharp::Subject
+  leccionlist:
+  - id: 0
+    lessons: "\xBFque es una variable?"
+    options:
+    - Id
+    - Lisyta
+    - Simbolo
+    - Tipo
+    - Contenedor
+    correctanswer: 4
+  - id: 0
+    lessons: "\xBFQue es una fucion?"
+    options:
+    - variable
+    - procesi
+    - clase
+    - funcion
+    - recurso
+    correctanswer: 1
+  - id: 0
+    lessons: "\xBFQue es un algortimo?"
+    options:
+    - una serie de pasos para resolver un roblema
+    - 'una variable '
+    - una funcion
+    - 'un programa '
+    - un script
+    correctanswer: 0
+  - id: 0
+    lessons: "\xBFQue es un programa?"
+    options:
+    - Una funcion
+    - Una clase
+    - Un recurso
+    - Un conjunto de algortimos
+    - Una serie de TV
+    correctanswer: 3
+  - id: 0
+    lessons: 
+    options:
+    - Una funcion
+    - Una clase
+    - Un recurso
+    - Un conjunto de algortimos
+    - Una serie de TV
+    correctanswer: 0
