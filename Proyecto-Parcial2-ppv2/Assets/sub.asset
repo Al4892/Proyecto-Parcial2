@@ -9,6 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3efcf3834f0949a7acb7dd9c8105ab2, type: 3}
-  m_Name: New Lesson
+  m_Script: {fileID: 0}
+  m_Name: sub
   m_EditorClassIdentifier: Assembly-CSharp::Subject
+  leccionlist:
+  - id: 0
+    lessons: 
+    options:
+    - Id
+    - Lista
+    - Simbolo
+    - Tipo
+    - Contenedor
+    correctanswer: 0
