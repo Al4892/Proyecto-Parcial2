@@ -535,6 +535,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1965765579}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: lection
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: Stagetitle
+      value: 
+      objectReference: {fileID: 1846066185}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1421915851}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: CurrentLesson
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: TotalLessions
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LesonContainer
+      value: 
+      objectReference: {fileID: 2008948846}
     - target: {fileID: 8543309118375840196, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: m_Name
       value: subject (4)
@@ -1195,6 +1247,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1106546656}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: lection
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: Stagetitle
+      value: 
+      objectReference: {fileID: 1846066185}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1421915851}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: CurrentLesson
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: TotalLessions
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LesonContainer
+      value: 
+      objectReference: {fileID: 2008948846}
     - target: {fileID: 8543309118375840196, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: m_Name
       value: subject (3)
@@ -1209,6 +1313,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3836460452834323957, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
   m_PrefabInstance: {fileID: 1106546654}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1106546656 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+  m_PrefabInstance: {fileID: 1106546654}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a178bfd84984045adc27109c304d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1172016790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,6 +1698,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1856472649}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: lection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: Stagetitle
+      value: 
+      objectReference: {fileID: 1846066185}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1421915851}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: CurrentLesson
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: TotalLessions
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LesonContainer
+      value: 
+      objectReference: {fileID: 2008948846}
     - target: {fileID: 8543309118375840196, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: m_Name
       value: subject (1)
@@ -1819,6 +1986,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1523664587}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: lection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: Stagetitle
+      value: 
+      objectReference: {fileID: 1846066185}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1421915851}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: CurrentLesson
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: TotalLessions
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LesonContainer
+      value: 
+      objectReference: {fileID: 2008948846}
     - target: {fileID: 8543309118375840196, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: m_Name
       value: subject (2)
@@ -1833,6 +2052,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3836460452834323957, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
   m_PrefabInstance: {fileID: 1445516100}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1523664587 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+  m_PrefabInstance: {fileID: 1445516100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a178bfd84984045adc27109c304d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1797638998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,6 +2434,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846066183}
   m_CullTransparentMesh: 1
+--- !u!114 &1856472649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+  m_PrefabInstance: {fileID: 1311965984}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a178bfd84984045adc27109c304d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1892798648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,6 +2655,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914161176}
   m_CullTransparentMesh: 1
+--- !u!114 &1965765579 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+  m_PrefabInstance: {fileID: 500935748}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a178bfd84984045adc27109c304d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2008948846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2984,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8374124106274177871}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LessonContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373594935733774569, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: lection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonData
+      value: 
+      objectReference: {fileID: 11400000, guid: bf726138667f6f9479b20d27e40d9a1c, type: 2}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: Stagetitle
+      value: 
+      objectReference: {fileID: 1846066185}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonStage
+      value: 
+      objectReference: {fileID: 1421915851}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: CurrentLesson
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: TotalLessions
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LesonContainer
+      value: 
+      objectReference: {fileID: 2008948846}
     - target: {fileID: 8543309118375840196, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: m_Name
       value: subject
@@ -2746,6 +3054,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3836460452834323957, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
   m_PrefabInstance: {fileID: 8374124106274177869}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8374124106274177871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+  m_PrefabInstance: {fileID: 8374124106274177869}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a178bfd84984045adc27109c304d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
