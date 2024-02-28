@@ -12,3 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3efcf3834f0949a7acb7dd9c8105ab2, type: 3}
   m_Name: New Lesson
   m_EditorClassIdentifier: Assembly-CSharp::Subject
+  Lesson: 1
+  leccionlist:
+  - id: 0
+    lessons: "\xBFQue es variable?"
+    options:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctanswer: 0
+  - id: 0
+    lessons: que es una funcion
+    options:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctanswer: 0
+  - id: 0
+    lessons: "\xBFQue es un progrmama?"
+    options:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctanswer: 0
+  - id: 0
+    lessons: "\xBFhay una diferencia entre programa y tal?"
+    options:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctanswer: 0
+  - id: 0
+    lessons: "\xBFQue es funciom?"
+    options:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctanswer: 0

@@ -12,13 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: sub
   m_EditorClassIdentifier: Assembly-CSharp::Subject
-  leccionlist:
-  - id: 0
-    lessons: 
-    options:
-    - Id
-    - Lista
-    - Simbolo
-    - Tipo
-    - Contenedor
-    correctanswer: 0
+  Lesson: 0
+  leccionlist: []
