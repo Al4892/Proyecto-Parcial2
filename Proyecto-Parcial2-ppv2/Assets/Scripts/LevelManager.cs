@@ -6,20 +6,36 @@ using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager Instance;
+
     [Header("Level Data")]
     public Subject lesson;
+
     [Header("User interface")]
     public TMP_Text questiontxt;
     public List<Options> option;
+
     [Header("Game configuration")]
     public int QuestionAmount = 0;
     public int Currentquestion = 0;
     public string Question;
     public string Correctanswer;
+    public int CorrectanswerfromUser;
+
     [Header("Current Lesson")]
     public Leccion CurrentLesson;
 
-    
+    private void Awake()
+    {
+        if(Instance!= null)
+        {
+            return;
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
     void Start()
     {
         //establecer cantidad de prgts en la leccion
@@ -40,6 +56,13 @@ public class LevelManager : MonoBehaviour
             Correctanswer = CurrentLesson.options[CurrentLesson.correctanswer];
             //establecemos la pregunta en ui
             questiontxt.text = Question;
+            //establecemos las opcones
+            for(int i = 0; i < CurrentLesson.options.Count; i++)
+            {
+                option[i].GetComponent<Options>().optionName = CurrentLesson.options[i];
+                option[i].GetComponent<Options>().OptionID=i;
+                option[i].GetComponent<Options>().Updatetext();
+            }
            
             
         }
@@ -63,5 +86,8 @@ public class LevelManager : MonoBehaviour
             //cambio de escena
         }
     }
-    
+    public void setPlayerAnswer(int _answer)
+    {
+        CorrectanswerfromUser = _answer;
+    }
 }

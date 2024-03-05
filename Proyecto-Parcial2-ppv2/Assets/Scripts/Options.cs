@@ -19,4 +19,12 @@ public class Options : MonoBehaviour
     {
         
     }
+    public void Updatetext()
+    {
+        transform.GetChild(0).GetComponent<TMP_Text>().text = optionName;
+    }
+    public void SelectOptions()
+    {
+        LevelManager.Instance.setPlayerAnswer(OptionID);
+    }
 }
