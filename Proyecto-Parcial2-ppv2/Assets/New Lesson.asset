@@ -17,11 +17,11 @@ MonoBehaviour:
   - id: 0
     lessons: "\xBFQue es variable?"
     options:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Id
+    - Tipo
+    - Lista
+    - Simbolo
+    - Contenedor
     correctanswer: 0
   - id: 0
     lessons: que es una funcion

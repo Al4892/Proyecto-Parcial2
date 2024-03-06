@@ -13,21 +13,26 @@ public class LevelManager : MonoBehaviour
 
     [Header("User interface")]
     public TMP_Text questiontxt;
+    public TMP_Text questiongood;
     public List<Options> option;
+    public GameObject checkbutton;
+    public GameObject AnswerContainer;
+    public Color Green;
+    public Color Red;
 
     [Header("Game configuration")]
     public int QuestionAmount = 0;
     public int Currentquestion = 0;
     public string Question;
     public string Correctanswer;
-    public int CorrectanswerfromUser;
+    public int CorrectanswerfromUser = 9;
 
     [Header("Current Lesson")]
     public Leccion CurrentLesson;
 
     private void Awake()
     {
-        if(Instance!= null)
+        if (Instance != null)
         {
             return;
         }
@@ -57,14 +62,14 @@ public class LevelManager : MonoBehaviour
             //establecemos la pregunta en ui
             questiontxt.text = Question;
             //establecemos las opcones
-            for(int i = 0; i < CurrentLesson.options.Count; i++)
+            for (int i = 0; i < CurrentLesson.options.Count; i++)
             {
                 option[i].GetComponent<Options>().optionName = CurrentLesson.options[i];
-                option[i].GetComponent<Options>().OptionID=i;
+                option[i].GetComponent<Options>().OptionID = i;
                 option[i].GetComponent<Options>().Updatetext();
             }
-           
-            
+
+
         }
         else
         {
@@ -74,20 +79,73 @@ public class LevelManager : MonoBehaviour
     }
     public void NextQuestion()
     {
-        if (Currentquestion < QuestionAmount)
+        if (CheckPlayerState())
         {
-         //incrementamos el indice de la preugnta actual
-         Currentquestion++;
-         //
-         LoadQuestion();
+
+
+            if (Currentquestion < QuestionAmount)
+            {
+                bool isCorrect = CurrentLesson.options[CorrectanswerfromUser] == Correctanswer;
+                AnswerContainer.SetActive(true);
+                if (isCorrect)
+                {
+                    AnswerContainer.GetComponent<Image>().color = Green;
+                    questiongood.text = "respuesta correcta." + Question + ":" + Correctanswer;
+                }
+                else
+                {
+                    AnswerContainer.GetComponent<Image>().color = Red;
+                    questiongood.text = "respuesta incorrecta." + Question + ":" + Correctanswer;
+                }
+                //incrementamos el indice de la preugnta actual
+                Currentquestion++;
+                StartCoroutine(ShowResultAndLoadQuestion(isCorrect));
+                //
+               
+                CorrectanswerfromUser = 9;
+            }
+            else
+            {
+                //cambio de escena
+            }
+
+
         }
-        else
-        {
-            //cambio de escena
-        }
+
+
+
+
+
     }
     public void setPlayerAnswer(int _answer)
     {
         CorrectanswerfromUser = _answer;
+    }
+    public bool CheckPlayerState()
+    {
+        if (CorrectanswerfromUser != 9)
+        {
+            checkbutton.GetComponent<Button>().interactable = true;
+            checkbutton.GetComponent<Image>().color = Color.white;
+            return true;
+        }
+        else
+        {
+            checkbutton.GetComponent<Button>().interactable = false;
+            checkbutton.GetComponent<Image>().color = Color.grey;
+            return false;
+        }
+    }
+    private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
+    {
+        yield return new WaitForSeconds(2.5f);// ajusta el tiempo que deseas mostar el rsultadi
+        //oculta las respuestas
+        AnswerContainer.SetActive(false);
+        //carga la preguntaa
+        LoadQuestion();
+        //Activar el boton de mostrar resultado
+        //puedes hacer esto aqui o en loadquestion
+
+        CheckPlayerState();
     }
 }
