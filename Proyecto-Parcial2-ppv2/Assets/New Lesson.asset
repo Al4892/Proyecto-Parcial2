@@ -23,34 +23,34 @@ MonoBehaviour:
     - Simbolo
     - Contenedor
     correctanswer: 0
-  - id: 0
+  - id: 1
     lessons: que es una funcion
     options:
-    - 
-    - 
-    - 
-    - 
-    - 
-    correctanswer: 0
-  - id: 0
+    - x
+    - x
+    - x
+    - x
+    - x
+    correctanswer: 1
+  - id: 2
     lessons: "\xBFQue es un progrmama?"
     options:
-    - 
-    - 
-    - 
-    - 
-    - 
-    correctanswer: 0
-  - id: 0
+    - x
+    - x
+    - x
+    - x
+    - x
+    correctanswer: 2
+  - id: 3
     lessons: "\xBFhay una diferencia entre programa y tal?"
     options:
-    - 
-    - 
-    - 
-    - 
-    - 
-    correctanswer: 0
-  - id: 0
+    - x
+    - x
+    - xx
+    - x
+    - x
+    correctanswer: 3
+  - id: 4
     lessons: "\xBFQue es funciom?"
     options:
     - 
@@ -58,4 +58,4 @@ MonoBehaviour:
     - 
     - 
     - 
-    correctanswer: 0
+    correctanswer: 4

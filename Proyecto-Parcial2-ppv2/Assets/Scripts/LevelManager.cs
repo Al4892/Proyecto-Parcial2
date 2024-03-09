@@ -62,6 +62,7 @@ public class LevelManager : MonoBehaviour
             //establecemos la pregunta en ui
             questiontxt.text = Question;
             //establecemos las opcones
+            CorrectanswerfromUser = 0;
             for (int i = 0; i < CurrentLesson.options.Count; i++)
             {
                 option[i].GetComponent<Options>().optionName = CurrentLesson.options[i];
@@ -144,6 +145,8 @@ public class LevelManager : MonoBehaviour
         //carga la preguntaa
         LoadQuestion();
         //Activar el boton de mostrar resultado
+        
+        
         //puedes hacer esto aqui o en loadquestion
 
         CheckPlayerState();
