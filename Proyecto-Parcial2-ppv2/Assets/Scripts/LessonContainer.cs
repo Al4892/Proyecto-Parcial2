@@ -24,6 +24,7 @@ public class LessonContainer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // si el game object esta puesto se va a onupdate ui
         if(LesonContainer != null)
         {
             OnUpdateUI();
@@ -38,13 +39,16 @@ public class LessonContainer : MonoBehaviour
     // Update is called once per frame
     void OnUpdateUI()
     {
+        // accedemos si el los textos de stagetitle y lessonStange estan escritos
         if(Stagetitle!= null|| LessonStage != null)
         {
+            //lo que se muestra en la ui que seria la leccion y su seccion  de cada una
             Stagetitle.text = "Leccion" + lection;
             LessonStage.text = "Leccion" + CurrentLesson + "de" + TotalLessions;
         }
         else
         {
+            //mandamos un mensaje por si no estan puesto los textos 
             Debug.LogWarning("GameObject nulo, revisa las variables de tipo TMP_Text");
         }
     }
@@ -52,7 +56,7 @@ public class LessonContainer : MonoBehaviour
     public void EnableWindow()
     {
         OnUpdateUI();
-
+        //hacemos que la ventana de la leccion aparezca y desaparezca
         if (LesonContainer.activeSelf)
         {
             LesonContainer.SetActive(false);

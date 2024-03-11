@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("Level Data")]
     public Subject lesson;
-
+    // los game objects que teneos qe poner para cada cosa
     [Header("User interface")]
     public TMP_Text questiontxt;
     public TMP_Text questiongood;
@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     public GameObject AnswerContainer;
     public Color Green;
     public Color Red;
-
+    // esto es lo que recibe el script del scriptableobject
     [Header("Game configuration")]
     public int QuestionAmount = 0;
     public int Currentquestion = 0;
@@ -61,10 +61,11 @@ public class LevelManager : MonoBehaviour
             Correctanswer = CurrentLesson.options[CurrentLesson.correctanswer];
             //establecemos la pregunta en ui
             questiontxt.text = Question;
+                       
             //establecemos las opcones
-            CorrectanswerfromUser = 0;
             for (int i = 0; i < CurrentLesson.options.Count; i++)
             {
+                //les agregamos el contenido(respuesta) asi como su id 
                 option[i].GetComponent<Options>().optionName = CurrentLesson.options[i];
                 option[i].GetComponent<Options>().OptionID = i;
                 option[i].GetComponent<Options>().Updatetext();
@@ -76,6 +77,7 @@ public class LevelManager : MonoBehaviour
         {
             //si llegamos al final de las preguntas
             Debug.Log("Fin de las preguntas");
+            questiontxt.text = "Bien, se acabo.";
         }
     }
     public void NextQuestion()
@@ -83,17 +85,22 @@ public class LevelManager : MonoBehaviour
         if (CheckPlayerState())
         {
 
-
+            // igual que el anterior checamos que la pregunta este 
             if (Currentquestion < QuestionAmount)
             {
+                //el bool es para comparar la respuesta del jugador con la preestablecida
                 bool isCorrect = CurrentLesson.options[CorrectanswerfromUser] == Correctanswer;
+                //activa el answer container
                 AnswerContainer.SetActive(true);
+                // si se cumple la variable iscorrect 
                 if (isCorrect)
                 {
+                    // el contenedor se cambia de color a verde
                     AnswerContainer.GetComponent<Image>().color = Green;
+                    // y pone un texto diciendo que estuvo correcto
                     questiongood.text = "respuesta correcta." + Question + ":" + Correctanswer;
                 }
-                else
+                else// si no se cumple el iscorrect, se pone rojo y manda mensaje de que se equivoco
                 {
                     AnswerContainer.GetComponent<Image>().color = Red;
                     questiongood.text = "respuesta incorrecta." + Question + ":" + Correctanswer;
@@ -101,7 +108,7 @@ public class LevelManager : MonoBehaviour
                 //incrementamos el indice de la preugnta actual
                 Currentquestion++;
                 StartCoroutine(ShowResultAndLoadQuestion(isCorrect));
-                //
+                
                
                 CorrectanswerfromUser = 9;
             }
@@ -124,13 +131,14 @@ public class LevelManager : MonoBehaviour
     }
     public bool CheckPlayerState()
     {
+        // activamos el boton de comprobar si el ccorect answer es diferente a 9
         if (CorrectanswerfromUser != 9)
         {
             checkbutton.GetComponent<Button>().interactable = true;
             checkbutton.GetComponent<Image>().color = Color.white;
             return true;
         }
-        else
+        else// aqui lo desactivamos si el correctasnwer from user es 9 (se mantiene desactivado hasta que el jugador pulse una opcion) 
         {
             checkbutton.GetComponent<Button>().interactable = false;
             checkbutton.GetComponent<Image>().color = Color.grey;
@@ -139,7 +147,7 @@ public class LevelManager : MonoBehaviour
     }
     private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
     {
-        yield return new WaitForSeconds(2.5f);// ajusta el tiempo que deseas mostar el rsultadi
+        yield return new WaitForSeconds(2.5f);// ajusta el tiempo que deseas mostar el resultad0
         //oculta las respuestas
         AnswerContainer.SetActive(false);
         //carga la preguntaa

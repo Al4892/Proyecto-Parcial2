@@ -2502,7 +2502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Usa frases basicas , habla de la comida
+  m_text: Usa frases basicas , habla de la programacion.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ac5bb502d89c45baa9fd1459547b5a1, type: 2}
   m_sharedMaterial: {fileID: 5450702092664493221, guid: 0ac5bb502d89c45baa9fd1459547b5a1, type: 2}

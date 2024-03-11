@@ -11,6 +11,7 @@ public class Options : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //adquirimos el componente texto de la opcion y sera igual al nombre
         transform.GetChild(0).GetComponent<TMP_Text>().text = optionName;
     }
 
@@ -21,10 +22,12 @@ public class Options : MonoBehaviour
     }
     public void Updatetext()
     {
+        // lo actualiza el texto conforme vayan pasando las preguntas
         transform.GetChild(0).GetComponent<TMP_Text>().text = optionName;
     }
     public void SelectOptions()
     {
+        //mandamos el contenido de OptionId al setplayer answer
         LevelManager.Instance.setPlayerAnswer(OptionID);
         LevelManager.Instance.CheckPlayerState();
     }

@@ -15,47 +15,47 @@ MonoBehaviour:
   Lesson: 1
   leccionlist:
   - id: 0
-    lessons: "\xBFQue es variable?"
+    lessons: "\xBFQue es una variable?"
     options:
     - Id
     - Tipo
     - Lista
     - Simbolo
     - Contenedor
-    correctanswer: 0
+    correctanswer: 4
   - id: 1
-    lessons: que es una funcion
+    lessons: "\xBFqu\xE9 es una funcion?"
     options:
-    - x
-    - x
-    - x
-    - x
-    - x
+    - Variable
+    - Proceso
+    - Clase
+    - Recurso
+    - Script
     correctanswer: 1
   - id: 2
-    lessons: "\xBFQue es un progrmama?"
+    lessons: "\xBFQu\xE9 es un algortimo"
     options:
-    - x
-    - x
-    - x
-    - x
-    - x
-    correctanswer: 2
-  - id: 3
-    lessons: "\xBFhay una diferencia entre programa y tal?"
-    options:
-    - x
-    - x
-    - xx
-    - x
-    - x
-    correctanswer: 3
-  - id: 4
-    lessons: "\xBFQue es funciom?"
-    options:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Una variable
+    - Una funcion
+    - Un programa
+    - Una lista
+    - pasos para resolver un problema
     correctanswer: 4
+  - id: 3
+    lessons: "\xBFQue es un programa?"
+    options:
+    - una funcion
+    - Un recurso
+    - Una clase
+    - Serie de TV
+    - conjunto de algoritmos
+    correctanswer: 4
+  - id: 4
+    lessons: "\xBFExiste una dferecia entre un programa y una aplicacion?"
+    options:
+    - Si
+    - No
+    - Si
+    - No
+    - 
+    correctanswer: 0
