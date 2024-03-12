@@ -44,7 +44,7 @@ public class LessonContainer : MonoBehaviour
         {
             //lo que se muestra en la ui que seria la leccion y su seccion  de cada una
             Stagetitle.text = "Leccion " + lection;
-            LessonStage.text = "Leccion " + CurrentLesson + "de " + TotalLessions;
+            LessonStage.text = "Leccion " + CurrentLesson + " de " + TotalLessions;
         }
         else//si no se cumple la funciom
         {
