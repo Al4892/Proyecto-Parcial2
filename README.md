@@ -7,7 +7,7 @@ Este es un Proyecto del parcial 2 de la materia de Programacion para videojuegos
 
 -+-Para poder instalar el ejecutable desde github puede clonar el repositorio o darle click en code y dale en DownloadZip, si tiene alguna duda, no dude en contactar conmigo. Buen dia.
 
-El proyecto se conforma de tres scripts principales:
+El proyecto se conforma de cuatro scripts principales:
 ---
 LeccionManager: que se encarga de supervisar el tipo de leccion que vas a entrar.
 
