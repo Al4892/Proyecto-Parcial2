@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     [Header("User interface")]
     public TMP_Text questiontxt;
     public TMP_Text questiongood;
+    public TMP_Text lives;
     public List<Options> option;
     public GameObject checkbutton;
     public GameObject AnswerContainer;
@@ -29,7 +30,8 @@ public class LevelManager : MonoBehaviour
 
     [Header("Current Lesson")]
     public Leccion CurrentLesson;
-
+    //singleton es para renstringir la creacion de objetos pertencientes
+    //a una clase o el valor de un tipo, en este caso renstringe la instancia
     private void Awake()
     {
         if (Instance != null)
@@ -48,6 +50,7 @@ public class LevelManager : MonoBehaviour
         // cargar la primera pregunta
         LoadQuestion();
     }
+    //funcion que se ecnarga de cargar la pregunta y cambiar las opciones a elejir
     private void LoadQuestion()
     {
         //Aseguramos que la pregumta este dentro del los limites
@@ -67,7 +70,9 @@ public class LevelManager : MonoBehaviour
             {
                 //les agregamos el contenido(respuesta) asi como su id 
                 option[i].GetComponent<Options>().optionName = CurrentLesson.options[i];
+                //el id del boton/opcion
                 option[i].GetComponent<Options>().OptionID = i;
+                //hace la funcion de update text del boton
                 option[i].GetComponent<Options>().Updatetext();
             }
 
@@ -80,8 +85,10 @@ public class LevelManager : MonoBehaviour
             questiontxt.text = "Bien, se acabo.";
         }
     }
+    //clase donde se checa si la respuess son correctas y incorrectas
     public void NextQuestion()
     {
+        //checa el player state si esta activo y se pulsa el boton de comprobar
         if (CheckPlayerState())
         {
 
@@ -98,15 +105,16 @@ public class LevelManager : MonoBehaviour
                     // el contenedor se cambia de color a verde
                     AnswerContainer.GetComponent<Image>().color = Green;
                     // y pone un texto diciendo que estuvo correcto
-                    questiongood.text = "respuesta correcta." + Question + ":" + Correctanswer;
+                    questiongood.text = "respuesta correcta " + ": " + Correctanswer;
                 }
                 else// si no se cumple el iscorrect, se pone rojo y manda mensaje de que se equivoco
                 {
                     AnswerContainer.GetComponent<Image>().color = Red;
-                    questiongood.text = "respuesta incorrecta." + Question + ":" + Correctanswer;
+                    questiongood.text = "respuesta incorrecta. "+"Correcta"+": " + Correctanswer;
                 }
                 //incrementamos el indice de la preugnta actual
                 Currentquestion++;
+                //iniciamos una corroutina donde mandamos el resultado de is correct a la funcion showresults
                 StartCoroutine(ShowResultAndLoadQuestion(isCorrect));
                 
                
@@ -125,26 +133,34 @@ public class LevelManager : MonoBehaviour
 
 
     }
+    //funcion que agarra el id de option y correctanswer es igual al idoption
     public void setPlayerAnswer(int _answer)
     {
         CorrectanswerfromUser = _answer;
     }
+    //funcion que se encarga de ser interactuable el boton o desactivarlo al elejir una opcion
     public bool CheckPlayerState()
     {
         // activamos el boton de comprobar si el ccorect answer es diferente a 9
         if (CorrectanswerfromUser != 9)
         {
+            //activa el bot0n
             checkbutton.GetComponent<Button>().interactable = true;
+            //lo cambia a su color normal
             checkbutton.GetComponent<Image>().color = Color.white;
             return true;
         }
         else// aqui lo desactivamos si el correctasnwer from user es 9 (se mantiene desactivado hasta que el jugador pulse una opcion) 
         {
+            //desactiva el boton, no se puede pulsar
             checkbutton.GetComponent<Button>().interactable = false;
+            // hace el boton de un color gris
             checkbutton.GetComponent<Image>().color = Color.grey;
             return false;
         }
     }
+    //funcion que inicia el proceso de la corrutina la cual suspende el proceso del codigo
+    //dependiendo de lo que se escriba de la misma funcion.
     private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
     {
         yield return new WaitForSeconds(2.5f);// ajusta el tiempo que deseas mostar el resultad0

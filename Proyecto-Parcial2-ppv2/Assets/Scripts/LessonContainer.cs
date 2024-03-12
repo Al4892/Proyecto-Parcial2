@@ -43,10 +43,10 @@ public class LessonContainer : MonoBehaviour
         if(Stagetitle!= null|| LessonStage != null)
         {
             //lo que se muestra en la ui que seria la leccion y su seccion  de cada una
-            Stagetitle.text = "Leccion" + lection;
-            LessonStage.text = "Leccion" + CurrentLesson + "de" + TotalLessions;
+            Stagetitle.text = "Leccion " + lection;
+            LessonStage.text = "Leccion " + CurrentLesson + "de " + TotalLessions;
         }
-        else
+        else//si no se cumple la funciom
         {
             //mandamos un mensaje por si no estan puesto los textos 
             Debug.LogWarning("GameObject nulo, revisa las variables de tipo TMP_Text");

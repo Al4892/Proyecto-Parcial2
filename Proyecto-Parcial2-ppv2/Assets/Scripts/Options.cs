@@ -11,7 +11,7 @@ public class Options : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //adquirimos el componente texto de la opcion y sera igual al nombre
+        //adquirimos el componente texto de la opcion y sera igual al nombre al dels scripbatle object
         transform.GetChild(0).GetComponent<TMP_Text>().text = optionName;
     }
 
@@ -20,6 +20,7 @@ public class Options : MonoBehaviour
     {
         
     }
+    //actualiza el texto
     public void Updatetext()
     {
         // lo actualiza el texto conforme vayan pasando las preguntas
@@ -29,6 +30,7 @@ public class Options : MonoBehaviour
     {
         //mandamos el contenido de OptionId al setplayer answer
         LevelManager.Instance.setPlayerAnswer(OptionID);
+        //con el check player state checamos para la activacion del comprobar
         LevelManager.Instance.CheckPlayerState();
     }
 }

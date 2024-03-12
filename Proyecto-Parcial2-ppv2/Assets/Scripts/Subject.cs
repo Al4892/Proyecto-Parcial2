@@ -6,9 +6,10 @@ using UnityEngine;
 
 public class Subject : ScriptableObject
 {
+    //es la leccion 
     [Header("Game object configuration")]
     public int Lesson = 0;
-
+    // es la lista de la lecciones
     [Header("Lession Quest Configuration")]
    public List<Leccion> leccionlist;
 }
