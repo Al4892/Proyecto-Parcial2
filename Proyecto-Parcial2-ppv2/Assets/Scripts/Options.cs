@@ -32,5 +32,6 @@ public class Options : MonoBehaviour
         LevelManager.Instance.setPlayerAnswer(OptionID);
         //con el check player state checamos para la activacion del comprobar
         LevelManager.Instance.CheckPlayerState();
+        
     }
 }
