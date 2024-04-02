@@ -568,6 +568,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonName
+      value: Lesson5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: Stagetitle
       value: 
       objectReference: {fileID: 1846066185}
@@ -1000,7 +1004,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 860567915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1797639004}
+        m_TargetAssemblyTypeName: MainScript, Assembly-CSharp
+        m_MethodName: BeginGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &860567915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,6 +1294,10 @@ PrefabInstance:
     - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: lection
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonName
+      value: Lesson4
       objectReference: {fileID: 0}
     - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: Stagetitle
@@ -1731,6 +1751,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonName
+      value: Lesson2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: Stagetitle
       value: 
       objectReference: {fileID: 1846066185}
@@ -2019,6 +2043,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonName
+      value: Lesson3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: Stagetitle
       value: 
       objectReference: {fileID: 1846066185}
@@ -2076,6 +2104,7 @@ GameObject:
   - component: {fileID: 1797639000}
   - component: {fileID: 1797638999}
   - component: {fileID: 1797639003}
+  - component: {fileID: 1797639004}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2184,7 +2213,22 @@ MonoBehaviour:
     lessons: 
     options: []
     correctanswer: 0
-  subject: {fileID: 0}
+  subject:
+    Lesson: 0
+    leccionlist: []
+--- !u!114 &1797639004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797638998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989ae47c2fdf84fbab460f345412e2b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectedLesson: dummy
 --- !u!1 &1803710198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,7 +2746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2008948847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3039,6 +3083,10 @@ PrefabInstance:
       propertyPath: LessonData
       value: 
       objectReference: {fileID: 11400000, guid: bf726138667f6f9479b20d27e40d9a1c, type: 2}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonName
+      value: Lesson1
+      objectReference: {fileID: 0}
     - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: Stagetitle
       value: 

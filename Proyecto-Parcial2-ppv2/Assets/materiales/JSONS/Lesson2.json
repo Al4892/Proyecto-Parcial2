@@ -1,0 +1,52 @@
+{
+    {
+        "titulo": "Lección 2: Programación Orientada a Objetos en C#",
+        "preguntas": [
+            {
+                "pregunta": "¿Qué es la herencia en C#?",
+                "opciones": [
+                    "Un mecanismo para crear una nueva clase basada en una clase existente",
+                    "Una forma de ocultar la implementación de una clase",
+                    "Una característica que permite crear múltiples instancias de una clase",
+                    "Un tipo de bucle en C#",
+                    "Una estructura de control para la toma de decisiones"
+                ],
+                "respuesta_correcta": "Un mecanismo para crear una nueva clase basada en una clase existente"
+            },
+            {
+                "pregunta": "¿Cuál es la palabra clave utilizada para implementar la herencia en C#?",
+                "opciones": [
+                    "inherits",
+                    "extends",
+                    "implements",
+                    "inherit",
+                    "inheritance"
+                ],
+                "respuesta_correcta": "inherits"
+            },
+            {
+                "pregunta": "¿Qué es el polimorfismo en C#?",
+                "opciones": [
+                    "La capacidad de una clase para tener varias formas",
+                    "La capacidad de una clase para ser sellada",
+                    "La capacidad de una clase para ocultar su implementación",
+                    "La capacidad de una clase para ser abstracta",
+                    "La capacidad de una clase para tener métodos privados"
+                ],
+                "respuesta_correcta": "La capacidad de una clase para tener varias formas"
+            },
+            {
+                "pregunta": "¿Cuál es el modificador de acceso predeterminado para los miembros de clase en C#?",
+                "opciones": [
+                    "private",
+                    "public",
+                    "protected",
+                    "internal",
+                    "default"
+                ],
+                "respuesta_correcta": "private"
+            }
+        ]
+    }
+
+}

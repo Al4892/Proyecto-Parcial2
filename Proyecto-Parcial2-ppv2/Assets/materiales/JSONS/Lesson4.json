@@ -1,0 +1,28 @@
+{
+
+    {
+        "titulo": "Lección 4: Trabajo con Componentes en Unity",
+        "preguntas": [
+            {
+                "pregunta": "¿Qué es un componente en Unity?",
+                "opciones": [ "Un bloque de código reutilizable", "Una pieza de funcionalidad que puede ser adjunta a un GameObject", "Una variable global en C#", "Una clase abstracta en C#", "Un tipo de bucle en C#" ],
+                "respuesta_correcta": "Una pieza de funcionalidad que puede ser adjunta a un GameObject"
+            },
+            {
+                "pregunta": "¿Cómo se accede a un componente desde un GameObject en Unity?",
+                "opciones": [ ".GetComponent()", ".AccessComponent()", ".FindComponent()", ".GetAttachedComponent()", ".Component()" ],
+                "respuesta_correcta": ".GetComponent()"
+            },
+            {
+                "pregunta": "¿Cuál es la función utilizada para iniciar la ejecución de un componente en Unity?",
+                "opciones": [ "Start()", "Init()", "Begin()", "Run()", "Initialize()" ],
+                "respuesta_correcta": "Start()"
+            },
+            {
+                "pregunta": "¿Qué interfaz proporciona métodos para manejar eventos de colisión en Unity?",
+                "opciones": [ "Collision", "Collider", "CollisionHandler", "ICollision", "IComparable" ],
+                "respuesta_correcta": "Collision"
+            }
+        ]
+    }
+}

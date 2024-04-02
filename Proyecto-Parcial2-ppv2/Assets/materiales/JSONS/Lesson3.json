@@ -1,0 +1,52 @@
+{
+
+    {
+        "titulo": "Lección 3: Manejo de Eventos y Delegados en Unity",
+        "preguntas": [
+            {
+                "pregunta": "¿Qué es un delegado en C#?",
+                "opciones": [
+                    "Un tipo que representa referencias a métodos con un conjunto particular de parámetros y tipo de retorno",
+                    "Un tipo de datos para almacenar múltiples valores",
+                    "Una estructura de datos para organizar objetos",
+                    "Una forma de crear nuevas instancias de clases",
+                    "Un tipo de bucle en C#"
+                ],
+                "respuesta_correcta": "Un tipo que representa referencias a métodos con un conjunto particular de parámetros y tipo de retorno"
+            },
+            {
+                "pregunta": "¿Cuál es el operador utilizado para agregar un manejador de eventos en C#?",
+                "opciones": [
+                    "+",
+                    "-",
+                    "*",
+                    "/",
+                    "%"
+                ],
+                "respuesta_correcta": "+"
+            },
+            {
+                "pregunta": "¿Qué es un evento en C#?",
+                "opciones": [
+                    "Una notificación de que algo ha sucedido dentro de un programa",
+                    "Una estructura de datos para almacenar información",
+                    "Una forma de hacer cálculos matemáticos",
+                    "Una estructura de control para la toma de decisiones",
+                    "Una forma de crear nuevos tipos de datos"
+                ],
+                "respuesta_correcta": "Una notificación de que algo ha sucedido dentro de un programa"
+            },
+            {
+                "pregunta": "¿Cuál es la palabra clave utilizada para declarar un evento en C#?",
+                "opciones": [
+                    "event",
+                    "delegate",
+                    "function",
+                    "eventhandler",
+                    "notify"
+                ],
+                "respuesta_correcta": "event"
+            }
+        ]
+    }
+}

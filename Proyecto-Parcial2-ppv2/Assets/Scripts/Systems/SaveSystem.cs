@@ -22,12 +22,16 @@ public class SaveSystem : MonoBehaviour
     }
 
   // se reproduce lo que hay aqui desde el primer frame
-     private void Start()
+    private void Start()
     {
         // adquiere la funcion saveToJSon y guarda el nombre 
         SaveToJSON("LeccionDummy",data);
         //agarra el subject o un Json con el nombre y lo guarda
-        subject = LoadFromJSON<SubjectContainer>("SubjectDummy");
+        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLeccion"));
+    }
+    public void createFile(string filename, string extension)
+    {
+
     }
 
     // funcion encargada de almacenar objetos en archivos JSON

@@ -1,0 +1,53 @@
+{
+
+    "lecciones": [
+    {
+      "titulo": "Lección 1: Fundamentos de C# en Unity",
+      "preguntas": [
+        {
+          "pregunta": "¿Cuál es la palabra clave para declarar una clase en C#?",
+          "opciones": [
+            "class",
+            "define",
+            "struct",
+            "void",
+            "new"
+          ],
+          "respuesta_correcta": "class"
+        },
+        {
+          "pregunta": "¿Cuál es el modificador de acceso que hace que un miembro de clase sea visible solo dentro de la clase y sus clases derivadas?",
+          "opciones": [
+            "protected",
+            "private",
+            "public",
+            "internal",
+            "static"
+          ],
+          "respuesta_correcta": "protected"
+        },
+        {
+          "pregunta": "¿Qué operador se utiliza para acceder a miembros de una clase en C#?",
+          "opciones": [
+            ".",
+            "->",
+            "::",
+            "=>",
+            ":::"
+          ],
+          "respuesta_correcta": "."
+        },
+        {
+          "pregunta": "¿Cuál es el tipo de retorno de una función que no devuelve ningún valor en C#?",
+          "opciones": [
+            "void",
+            "null",
+            "None",
+            "nothing",
+            "empty"
+          ],
+          "respuesta_correcta": "void"
+        }
+      ]
+    }
+}
