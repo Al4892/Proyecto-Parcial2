@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: sub
   m_EditorClassIdentifier: Assembly-CSharp::Subject
   Lesson: 0
-  leccionlist: []
+  leccionlist:
+  - id: 0
+    lessons: 
+    options: []
+    correctanswer: 0

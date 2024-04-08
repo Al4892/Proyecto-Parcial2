@@ -1751,6 +1751,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
+      propertyPath: LessonData
+      value: 
+      objectReference: {fileID: 11400000, guid: df531b9fcb5e64d828e5cf57ca29cab4, type: 2}
+    - target: {fileID: 6794243371991295940, guid: 639d4d3203b364c28bc2fcbd0e2201b6, type: 3}
       propertyPath: LessonName
       value: Lesson2
       objectReference: {fileID: 0}
@@ -2215,7 +2219,9 @@ MonoBehaviour:
     correctanswer: 0
   subject:
     Lesson: 0
-    leccionlist: []
+    leccionlist:
+    - {fileID: 0}
+  Subjects: {fileID: 11400000, guid: df531b9fcb5e64d828e5cf57ca29cab4, type: 2}
 --- !u!114 &1797639004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2228,7 +2234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 989ae47c2fdf84fbab460f345412e2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SelectedLesson: dummy
+  SelectedLesson: Dummy
 --- !u!1 &1803710198
 GameObject:
   m_ObjectHideFlags: 0

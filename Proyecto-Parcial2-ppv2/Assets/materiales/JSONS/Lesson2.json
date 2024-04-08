@@ -1,28 +1,28 @@
 {
-    {
-        "titulo": "Lección 2: Programación Orientada a Objetos en C#",
-        "preguntas": [
+   "Data": {
+       
+        "Id": [
             {
-                "pregunta": "¿Qué es la herencia en C#?",
-                "opciones": [
+                "Lessons": "¿Qué es la herencia en C#?",
+                "Options": [
                     "Un mecanismo para crear una nueva clase basada en una clase existente",
                     "Una forma de ocultar la implementación de una clase",
                     "Una característica que permite crear múltiples instancias de una clase",
                     "Un tipo de bucle en C#",
                     "Una estructura de control para la toma de decisiones"
                 ],
-                "respuesta_correcta": "Un mecanismo para crear una nueva clase basada en una clase existente"
+                "CorrectAnswer": "Un mecanismo para crear una nueva clase basada en una clase existente"
             },
             {
-                "pregunta": "¿Cuál es la palabra clave utilizada para implementar la herencia en C#?",
-                "opciones": [
+                "Lessons": "¿Cuál es la palabra clave utilizada para implementar la herencia en C#?",
+                "Options": [
                     "inherits",
                     "extends",
                     "implements",
                     "inherit",
                     "inheritance"
                 ],
-                "respuesta_correcta": "inherits"
+                "Correctanswer": "inherits"
             },
             {
                 "pregunta": "¿Qué es el polimorfismo en C#?",
@@ -44,7 +44,7 @@
                     "internal",
                     "default"
                 ],
-                "respuesta_correcta": "private"
+                "Correctanswer": "private"
             }
         ]
     }

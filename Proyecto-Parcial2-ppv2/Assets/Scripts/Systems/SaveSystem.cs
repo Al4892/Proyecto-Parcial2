@@ -8,6 +8,7 @@ public class SaveSystem : MonoBehaviour
         public static SaveSystem instance;
         public Leccion data;
     public SubjectContainer subject;
+    public Subject Subjects;
     //sigleton que hace instancia se hace una sola vez y si se quiere crear otra solo se devuleve la que ya se hizo anteriormente
     private void Awake()
     { 
@@ -25,9 +26,9 @@ public class SaveSystem : MonoBehaviour
     private void Start()
     {
         // adquiere la funcion saveToJSon y guarda el nombre 
-        SaveToJSON("LeccionDummy",data);
+        //SaveToJSON("LeccionDummy",data);
         //agarra el subject o un Json con el nombre y lo guarda
-        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLeccion"));
+        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectLesson"));
     }
     public void createFile(string filename, string extension)
     {
@@ -75,7 +76,7 @@ public class SaveSystem : MonoBehaviour
         // secrea un dato del tipo generico T
         T dato = new T();
         //se carga la ruta de la cual va a cargar el archivp agarrando el objeto de la carpeta 
-        string path = Application.dataPath+ "/materiales/ JSONS/" + _filename+ ".json";
+        string path = Application.dataPath+ "/materiales/JSONS/" + _filename+ ".json";
         //se hace un texto vacio para poder tener los datos de Json leidos
         string JSONdata = "";
         // comprueba si existe el Json en donde se le indico la ruta

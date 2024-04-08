@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance;
 
     [Header("Level Data")]
+    public SubjectContainer subject;
     public Subject lesson;
     // los game objects que teneos qe poner para cada cosa
     [Header("User interface")]

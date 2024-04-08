@@ -1,6 +1,6 @@
 {
 
-    "lecciones": [
+  "lecciones": [
     {
       "titulo": "Lección 1: Fundamentos de C# en Unity",
       "preguntas": [
@@ -50,4 +50,5 @@
         }
       ]
     }
+  ]
 }
