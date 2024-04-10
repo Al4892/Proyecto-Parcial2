@@ -20,6 +20,7 @@ public class SaveSystem : MonoBehaviour
         {
             instance = this;
         }
+        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectLesson"));
     }
 
   // se reproduce lo que hay aqui desde el primer frame
@@ -28,7 +29,6 @@ public class SaveSystem : MonoBehaviour
         // adquiere la funcion saveToJSon y guarda el nombre 
         //SaveToJSON("LeccionDummy",data);
         //agarra el subject o un Json con el nombre y lo guarda
-        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectLesson"));
     }
     public void createFile(string filename, string extension)
     {

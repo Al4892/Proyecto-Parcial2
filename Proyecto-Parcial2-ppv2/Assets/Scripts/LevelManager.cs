@@ -9,8 +9,8 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance;
 
     [Header("Level Data")]
+    
     public SubjectContainer subject;
-    public Subject lesson;
     // los game objects que teneos qe poner para cada cosa
     [Header("User interface")]
     public TMP_Text questiontxt;
@@ -46,8 +46,9 @@ public class LevelManager : MonoBehaviour
     }
     void Start()
     {
+        subject = SaveSystem.instance.subject;
         //establecer cantidad de prgts en la leccion
-        QuestionAmount = lesson.leccionlist.Count;
+        QuestionAmount = subject.leccionList.Count;
         // cargar la primera pregunta
         LoadQuestion();
     }
@@ -58,7 +59,7 @@ public class LevelManager : MonoBehaviour
         if (Currentquestion < QuestionAmount)
         {
             //establecemos la leccion actual
-            CurrentLesson = lesson.leccionlist[Currentquestion];
+            CurrentLesson = subject.leccionList[Currentquestion];
             //establecemos la pregunta
             Question = CurrentLesson.lessons;
             //Establecemos la respuesta correcta 

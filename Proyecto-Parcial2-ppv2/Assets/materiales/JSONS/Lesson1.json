@@ -1,53 +1,65 @@
 {
-
-    "lecciones": [
+  "Lesson": 6,
+  "leccionList": [
     {
-      "titulo": "Lección 1: Fundamentos de C# en Unity",
-      "preguntas": [
-        {
-          "pregunta": "¿Cuál es la palabra clave para declarar una clase en C#?",
-          "opciones": [
-            "class",
-            "define",
-            "struct",
-            "void",
-            "new"
-          ],
-          "respuesta_correcta": "class"
-        },
-        {
-          "pregunta": "¿Cuál es el modificador de acceso que hace que un miembro de clase sea visible solo dentro de la clase y sus clases derivadas?",
-          "opciones": [
-            "protected",
-            "private",
-            "public",
-            "internal",
-            "static"
-          ],
-          "respuesta_correcta": "protected"
-        },
-        {
-          "pregunta": "¿Qué operador se utiliza para acceder a miembros de una clase en C#?",
-          "opciones": [
-            ".",
-            "->",
-            "::",
-            "=>",
-            ":::"
-          ],
-          "respuesta_correcta": "."
-        },
-        {
-          "pregunta": "¿Cuál es el tipo de retorno de una función que no devuelve ningún valor en C#?",
-          "opciones": [
-            "void",
-            "null",
-            "None",
-            "nothing",
-            "empty"
-          ],
-          "respuesta_correcta": "void"
-        }
-      ]
+        "ID": 1,
+        "lessons": "¿Cuál es el componente principal del aire que respiramos?",
+        "options": [
+            "Oxígeno",
+            "Dióxido de carbono",
+            "Nitrógeno",
+            "Hidrógeno",
+            "Ozono"
+        ],
+        "correctanswer": 0
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué tipo de componente se utiliza para permitir que un GameObject sea visible en la escena de Unity?",
+      "options": [
+        "Collider",
+        "Rigidbody",
+        "MeshRenderer",
+        "Transform",
+        "AudioSource"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Cuál es el método que se llama una vez cuando un script se carga por primera vez?",
+      "options": [
+        "Start()",
+        "Awake()",
+        "Update()",
+        "FixedUpdate()",
+        "OnEnable()"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Qué se debe utilizar para acceder a componentes en otros GameObjects desde un script en Unity?",
+      "options": [
+        "GetComponentInChildren()",
+        "GetComponent()",
+        "Find()",
+        "GameObject.FindObjectOfType()",
+        "GetComponentInParent()"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Cuál es el evento que se dispara cuando se activa un GameObject en Unity?",
+      "options": [
+        "OnMouseEnter()",
+        "OnDisable()",
+        "Awake()",
+        "Start()",
+        "OnEnable()"
+      ],
+      "correctanswer": 4
     }
+  ]
 }

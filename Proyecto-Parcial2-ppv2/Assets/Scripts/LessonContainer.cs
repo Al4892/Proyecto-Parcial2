@@ -21,7 +21,7 @@ public class LessonContainer : MonoBehaviour
     public string LessonName;
 
     [Header("Lesson Data")]
-    public ScriptableObject LessonData;
+    int xd;
     // Start is called before the first frame update
     void Start()
     {

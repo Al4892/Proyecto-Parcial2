@@ -1,54 +1,65 @@
 {
-
-  "lecciones": [
+  "Lesson": 4,
+  "leccionList": [
     {
-      "titulo": "Lección 1: Fundamentos de C# en Unity",
-      "preguntas": [
-        {
-          "pregunta": "¿Cuál es la palabra clave para declarar una clase en C#?",
-          "opciones": [
-            "class",
-            "define",
-            "struct",
-            "void",
-            "new"
-          ],
-          "respuesta_correcta": "class"
-        },
-        {
-          "pregunta": "¿Cuál es el modificador de acceso que hace que un miembro de clase sea visible solo dentro de la clase y sus clases derivadas?",
-          "opciones": [
-            "protected",
-            "private",
-            "public",
-            "internal",
-            "static"
-          ],
-          "respuesta_correcta": "protected"
-        },
-        {
-          "pregunta": "¿Qué operador se utiliza para acceder a miembros de una clase en C#?",
-          "opciones": [
-            ".",
-            "->",
-            "::",
-            "=>",
-            ":::"
-          ],
-          "respuesta_correcta": "."
-        },
-        {
-          "pregunta": "¿Cuál es el tipo de retorno de una función que no devuelve ningún valor en C#?",
-          "opciones": [
-            "void",
-            "null",
-            "None",
-            "nothing",
-            "empty"
-          ],
-          "respuesta_correcta": "void"
-        }
-      ]
+      "ID": 1,
+      "lessons": "¿Cuál servicio de Unity se utiliza para mostrar anuncios en tu juego?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 0
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué servicio de Unity proporciona herramientas para analizar el comportamiento del usuario en tu juego?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Cuál de los siguientes servicios de Unity se utiliza para implementar compras dentro de la aplicación en tu juego?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Qué servicio de Unity se utiliza para permitir a los jugadores compartir y colaborar en el desarrollo de proyectos de Unity?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 4
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué herramienta de Unity se utiliza para compilar y desplegar tu juego en varias plataformas de manera eficiente?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 3
     }
   ]
 }

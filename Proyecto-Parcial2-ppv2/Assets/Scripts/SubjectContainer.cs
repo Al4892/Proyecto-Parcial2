@@ -14,5 +14,5 @@ public class SubjectContainer
     // es la lista de la lecciones
     [Header("Lession Quest Configuration")]
     [SerializeField]
-   public List<Subject> leccionlist;
+   public List<Leccion> leccionList;
 }

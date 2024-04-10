@@ -3623,7 +3623,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c48890dc4f794e218eec368bf99a979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lesson: {fileID: 11400000, guid: df531b9fcb5e64d828e5cf57ca29cab4, type: 2}
+  subject:
+    Lesson: 0
+    leccionList: []
   questiontxt: {fileID: 956998161}
   questiongood: {fileID: 789618775}
   lives: {fileID: 1996040440}
@@ -3654,7 +3656,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797638998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e42c6b36b2317841aa094b0739e7b70, type: 3}
   m_Name: 
@@ -3666,7 +3668,8 @@ MonoBehaviour:
     correctanswer: 0
   subject:
     Lesson: 0
-    leccionlist: []
+    leccionList: []
+  Subjects: {fileID: 11400000, guid: df531b9fcb5e64d828e5cf57ca29cab4, type: 2}
 --- !u!1 &1877784329
 GameObject:
   m_ObjectHideFlags: 0
