@@ -19,6 +19,8 @@ public class LessonContainer : MonoBehaviour
     [Header("External GameObject Configuration")]
     public GameObject LesonContainer;
     public string LessonName;
+    [Header("Credits container")]
+    public GameObject credits;
 
     [Header("Lesson Data")]
     int xd;
@@ -65,7 +67,19 @@ public class LessonContainer : MonoBehaviour
         else
         {
             LesonContainer.SetActive(true);
+            //Manda al main script de la leccion seleccionada para cargar el Json
             MainScript.instance.SetSelectedLesson(LessonName);
+        }
+    }
+    public void OnEnableCredits()
+    {
+       if (credits.activeSelf)
+       {
+            credits.SetActive(false);
+       }
+        else
+        {
+            credits.SetActive(true);
         }
     }
 }

@@ -20,6 +20,8 @@ public class SaveSystem : MonoBehaviour
         {
             instance = this;
         }
+        //Llamamos a la variable subject que carga la informacion obteniendo los datos que Main script mando con el setString()
+        //Le ordena cargar el json del nombre que se recibio a partir de del GetString y sobreescribe los datos de subject container y de los datos del script Leccion 
         subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectLesson"));
     }
 
@@ -76,7 +78,7 @@ public class SaveSystem : MonoBehaviour
         // secrea un dato del tipo generico T
         T dato = new T();
         //se carga la ruta de la cual va a cargar el archivp agarrando el objeto de la carpeta 
-        string path = Application.dataPath+ "/materiales/JSONS/" + _filename+ ".json";
+        string path = Application.dataPath+ "/StreamingAssets/JSONS/" + _filename+ ".json";
         //se hace un texto vacio para poder tener los datos de Json leidos
         string JSONdata = "";
         // comprueba si existe el Json en donde se le indico la ruta

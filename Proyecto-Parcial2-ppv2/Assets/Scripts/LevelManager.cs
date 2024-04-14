@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class LevelManager : MonoBehaviour
     public string Question;
     public string Correctanswer;
     public int CorrectanswerfromUser = 9;
+    public GameObject Changuescene;
+    public TMP_Text ChangueText;
 
     [Header("Current Lesson")]
     public Leccion CurrentLesson;
@@ -85,6 +88,9 @@ public class LevelManager : MonoBehaviour
             //si llegamos al final de las preguntas
             Debug.Log("Fin de las preguntas");
             questiontxt.text = "Bien, se acabo.";
+                StartCoroutine(escne(true));
+           
+
         }
     }
     //clase donde se checa si la respuess son correctas y incorrectas
@@ -118,6 +124,9 @@ public class LevelManager : MonoBehaviour
                 Currentquestion++;
                 //iniciamos una corroutina donde mandamos el resultado de is correct a la funcion showresults
                 StartCoroutine(ShowResultAndLoadQuestion(isCorrect));
+               
+                
+
                 
                
                 CorrectanswerfromUser = 9;
@@ -176,5 +185,20 @@ public class LevelManager : MonoBehaviour
         //puedes hacer esto aqui o en loadquestion
 
         CheckPlayerState();
+    }
+    private IEnumerator escne(bool iScorrect)
+    {
+       // Activa el gameobject changueScene
+            Changuescene.SetActive(true);
+        //Cambia el texto del ChangueText
+            ChangueText.text = "Muy bien, se te regresara al menu de lecciones en unos momentos";
+        //Para por 5 segundos el orden de los datos para que se mantengan un momento encendidos
+            yield return new WaitForSeconds(5.0f);
+        //despues de pasar el tiempo se desactiva el changueScene
+            Changuescene.SetActive(false) ;
+        // y tambien se cambia a la escena inicial del menu de la lecciones
+            SceneManager.LoadScene("SampleScene");
+
+        
     }
 }
