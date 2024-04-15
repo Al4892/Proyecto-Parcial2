@@ -1,0 +1,65 @@
+{
+  "Lesson": 3,
+  "leccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Qué componente se utiliza para crear sistemas de partículas en Unity?",
+      "options": [
+        "Collider",
+        "Rigidbody",
+        "MeshRenderer",
+        "Transform",
+        "ParticleSystem"
+      ],
+      "correctanswer": 4
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué módulo de un sistema de partículas controla la velocidad y dirección de las partículas?",
+      "options": [
+        "Main",
+        "Emission",
+        "Shape",
+        "Velocity over Lifetime",
+        "Renderer"
+      ],
+      "correctanswer": 3
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Qué propiedad se utiliza para controlar el color de las partículas en un sistema de partículas en Unity?",
+      "options": [
+        "Main",
+        "Emission",
+        "Color over Lifetime",
+        "Size over Lifetime",
+        "Rotation over Lifetime"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Cuál es el propósito del módulo 'Sub Emitters' en un sistema de partículas en Unity?",
+      "options": [
+        "Controlar la tasa de emisión de partículas",
+        "Agregar fuerzas externas a las partículas",
+        "Agregar efectos secundarios a las partículas principales",
+        "Controlar la dirección de emisión de partículas",
+        "Cambiar la forma de las partículas"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué componente se utiliza para reproducir un sistema de partículas en un GameObject en Unity?",
+      "options": [
+        "ParticleSystemRenderer",
+        "ParticleSystemEmitter",
+        "ParticleSystemAnimator",
+        "ParticleSystemRenderer",
+        "ParticleSystemPlayer"
+      ],
+      "correctanswer": 0
+    }
+  ]
+}

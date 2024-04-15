@@ -1,0 +1,65 @@
+{
+  "Lesson": 6,
+  "leccionList": [
+    {
+        "ID": 1,
+        "lessons": "¿Cuál es el componente principal del aire que respiramos?",
+        "options": [
+            "Oxígeno",
+            "Dióxido de carbono",
+            "Nitrógeno",
+            "Hidrógeno",
+            "Ozono"
+        ],
+        "correctanswer": 0
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué tipo de componente se utiliza para permitir que un GameObject sea visible en la escena de Unity?",
+      "options": [
+        "Collider",
+        "Rigidbody",
+        "MeshRenderer",
+        "Transform",
+        "AudioSource"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Cuál es el método que se llama una vez cuando un script se carga por primera vez?",
+      "options": [
+        "Start()",
+        "Awake()",
+        "Update()",
+        "FixedUpdate()",
+        "OnEnable()"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Qué se debe utilizar para acceder a componentes en otros GameObjects desde un script en Unity?",
+      "options": [
+        "GetComponentInChildren()",
+        "GetComponent()",
+        "Find()",
+        "GameObject.FindObjectOfType()",
+        "GetComponentInParent()"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Cuál es el evento que se dispara cuando se activa un GameObject en Unity?",
+      "options": [
+        "OnMouseEnter()",
+        "OnDisable()",
+        "Awake()",
+        "Start()",
+        "OnEnable()"
+      ],
+      "correctanswer": 4
+    }
+  ]
+}

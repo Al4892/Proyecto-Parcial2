@@ -31,6 +31,8 @@ public class LevelManager : MonoBehaviour
     public int CorrectanswerfromUser = 9;
     public GameObject Changuescene;
     public TMP_Text ChangueText;
+    public GameObject Fallo;
+    public int livess = 4;
 
     [Header("Current Lesson")]
     public Leccion CurrentLesson;
@@ -49,11 +51,13 @@ public class LevelManager : MonoBehaviour
     }
     void Start()
     {
+        lives.text = ""+livess;
         subject = SaveSystem.instance.subject;
         //establecer cantidad de prgts en la leccion
         QuestionAmount = subject.leccionList.Count;
         // cargar la primera pregunta
         LoadQuestion();
+        
     }
     //funcion que se ecnarga de cargar la pregunta y cambiar las opciones a elejir
     private void LoadQuestion()
@@ -88,7 +92,11 @@ public class LevelManager : MonoBehaviour
             //si llegamos al final de las preguntas
             Debug.Log("Fin de las preguntas");
             questiontxt.text = "Bien, se acabo.";
+            if(livess > 0)
+            {
+
                 StartCoroutine(escne(true));
+            }
            
 
         }
@@ -119,6 +127,8 @@ public class LevelManager : MonoBehaviour
                 {
                     AnswerContainer.GetComponent<Image>().color = Red;
                     questiongood.text = "respuesta incorrecta. "+"Correcta"+": " + Correctanswer;
+                    livess --;
+                    lives.text = ""+livess;
                 }
                 //incrementamos el indice de la preugnta actual
                 Currentquestion++;
@@ -135,13 +145,12 @@ public class LevelManager : MonoBehaviour
             {
                 //cambio de escena
             }
-
+            if (livess==0)
+            {
+                StartCoroutine(Fail(true));
+            }
 
         }
-
-
-
-
 
     }
     //funcion que agarra el id de option y correctanswer es igual al idoption
@@ -200,5 +209,13 @@ public class LevelManager : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
 
         
+    }
+    private IEnumerator Fail(bool Fail)
+    {
+        Fallo.SetActive(true);
+        yield return new WaitForSeconds(5.0f);
+
+        Fallo.SetActive(false);
+        SceneManager.LoadScene("SampleScene");
     }
 }

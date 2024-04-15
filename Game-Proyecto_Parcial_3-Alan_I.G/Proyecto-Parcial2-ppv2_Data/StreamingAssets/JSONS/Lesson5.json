@@ -1,0 +1,65 @@
+{
+  "Lesson": 4,
+  "leccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Cuál servicio de Unity se utiliza para mostrar anuncios en tu juego?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 0
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué servicio de Unity proporciona herramientas para analizar el comportamiento del usuario en tu juego?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Cuál de los siguientes servicios de Unity se utiliza para implementar compras dentro de la aplicación en tu juego?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Qué servicio de Unity se utiliza para permitir a los jugadores compartir y colaborar en el desarrollo de proyectos de Unity?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 4
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué herramienta de Unity se utiliza para compilar y desplegar tu juego en varias plataformas de manera eficiente?",
+      "options": [
+        "Unity Ads",
+        "Unity Analytics",
+        "Unity IAP",
+        "Unity Cloud Build",
+        "Unity Collaborate"
+      ],
+      "correctanswer": 3
+    }
+  ]
+}

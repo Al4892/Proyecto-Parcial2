@@ -1,0 +1,65 @@
+{
+  "Lesson": 7,
+  "leccionList": [
+    {
+      "ID": 1,
+      "lessons": "¿Cuál es el componente que se utiliza para detectar colisiones físicas en Unity?",
+      "options": [
+        "Rigidbody",
+        "Collider",
+        "MeshRenderer",
+        "Transform",
+        "AudioSource"
+      ],
+      "correctanswer": 1
+    },
+    {
+      "ID": 2,
+      "lessons": "¿Qué método de Unity se utiliza comúnmente para manejar la lógica de un juego en cada fotograma?",
+      "options": [
+        "Start()",
+        "Awake()",
+        "Update()",
+        "FixedUpdate()",
+        "OnEnable()"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 3,
+      "lessons": "¿Cuál es el propósito principal del método OnTriggerEnter en Unity?",
+      "options": [
+        "Reproducir sonidos",
+        "Controlar la cámara",
+        "Detectar colisiones",
+        "Crear animaciones",
+        "Controlar el movimiento físico"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 4,
+      "lessons": "¿Qué componente se utiliza para permitir que un GameObject sea visible en la escena de Unity?",
+      "options": [
+        "Collider",
+        "Rigidbody",
+        "MeshRenderer",
+        "Transform",
+        "AudioSource"
+      ],
+      "correctanswer": 2
+    },
+    {
+      "ID": 5,
+      "lessons": "¿Qué función cumple el componente Rigidbody en Unity?",
+      "options": [
+        "Controlar la cámara",
+        "Detectar colisiones",
+        "Controlar el movimiento físico",
+        "Reproducir sonidos",
+        "Crear animaciones"
+      ],
+      "correctanswer": 2
+    }
+  ]
+}
